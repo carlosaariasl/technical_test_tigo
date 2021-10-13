@@ -39,3 +39,12 @@ $.put = function(url, data, callback, type){
         // Do something with the result
     }
 });
+
+
+$.ajax({
+  url: '/script.cgi',
+  type: 'LIST',
+  success: function(result) {
+      // Do something with the result
+  }
+});
