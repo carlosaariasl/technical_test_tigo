@@ -1,6 +1,6 @@
 <?php
 require("conexion.php");
-$consulta = mysqli_query($con, "SELECT * FROM clientes");
+$consulta = mysqli_query($con, "SELECT * FROM cliente");
 if (mysqli_num_rows($consulta) > 0)
 {
     echo "

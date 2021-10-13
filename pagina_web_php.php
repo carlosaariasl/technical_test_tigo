@@ -19,13 +19,13 @@ $botones = 6;
 if(!isset($_GET['pagina'])) $indice = 0 ; else $indice = ($_GET['pagina']-1) * $porpagina;
 
 
-$totalpost = $conexion->query("SELECT * FROM mi_tabla");
+$totalpost = $conexion->query("SELECT * FROM cliente");
 
 
 $paginas = $totalpost->num_rows / $porpagina;
 
 
-$consulta = $conexion->query("SELECT * FROM mi_tabla ORDER BY id DESC LIMIT $indice, $porpagina");
+$consulta = $conexion->query("SELECT * FROM cliente ORDER BY id DESC LIMIT $indice, $porpagina");
 
 
 ?>
