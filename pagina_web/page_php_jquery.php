@@ -1,7 +1,5 @@
 <?php 
 
-
-
 //conexion a DB
 $conexion = mysqli_connect('localhost', 'usuario', 'password', 'base_datos');
 if(!$conexion){
